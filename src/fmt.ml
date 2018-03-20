@@ -26,6 +26,7 @@ let kstrf f fmt =
 
 let stdout = Format.std_formatter
 let stderr = Format.err_formatter
+let devnull = Format.make_formatter (fun _ _ _ -> ()) (fun () -> ())
 let pr = Format.printf
 let epr = Format.eprintf
 

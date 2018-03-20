@@ -54,6 +54,9 @@ val stdout : Format.formatter
 val stderr : Format.formatter
 (** [stderr] is the standard error formatter. *)
 
+val devnull : Format.formatter
+(** [devnull] is a formatter that ignores all inputs. *)
+
 val pr : ('a, Format.formatter, unit) format -> 'a
 (** [pr] is [pf stdout]. *)
 
